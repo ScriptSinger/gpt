@@ -11,7 +11,7 @@ use Telegram\Bot\Api;
 class TelegramController extends AbstractController
 {
     #[Route('/', name: 'app_telegram')]
-    public function index(): Response
+    public function index()
     {
         $telegramBotToken = $_ENV['TELEGRAM_BOT_TOKEN'];
 
@@ -29,6 +29,6 @@ class TelegramController extends AbstractController
                 ]);
             }
         }
-        return $this->render('');
+        dd($telegram);
     }
 }
