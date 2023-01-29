@@ -29,6 +29,5 @@ class TelegramController extends AbstractController
                 ]);
             }
         }
-        dd($telegram);
     }
 }

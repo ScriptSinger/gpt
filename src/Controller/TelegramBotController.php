@@ -14,6 +14,7 @@ class TelegramBotController extends AbstractController
     /**
      * @Route("/telegram-bot/handle-message", name="telegram_bot_handle_message")
      */
+    #[Route('/', name: 'app_telegram')]
     public function handleMessage(Request $request)
     {
         $telegramBotToken = $_ENV['TELEGRAM_BOT_TOKEN'];
